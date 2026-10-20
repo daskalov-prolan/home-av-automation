@@ -1,0 +1,19 @@
+# Copy this file to config.yaml and adjust it to your home.
+# config.yaml is git-ignored, so your IPs and passwords never end up on GitHub.
+
+devices:
+  receiver:
+    driver: denon_avr
+    name: Living room receiver
+    host: 192.168.1.50
+
+automations:
+  - name: Default volume when the receiver turns on
+    when: {device: receiver, state: power, equals: true}
+    then:
+      - {device: receiver, action: set_volume, args: {volume: 30}}
+
+  - name: Louder for gaming
+    when: {device: receiver, state: input, equals: GAME}
+    then:
+      - {device: receiver, action: set_volume, args: {volume: 45}}
