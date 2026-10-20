@@ -1,7 +1,7 @@
 # Device inventory
 
 Fill in one row per device. This is the input for deciding which driver to write next.
-Keep real IP addresses out of this file (the repo is public) - put them in `config.yaml`.
+Keep real IP addresses and passwords out of this file - put them in `config.yaml` (git-ignored).
 
 | Device | Brand / model | Room | Connection options (LAN / RS-232 / IR / CEC) | Known protocol / port | Driver status |
 |---|---|---|---|---|---|

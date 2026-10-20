@@ -37,7 +37,7 @@ copy config.example.yaml config.yaml   # then edit IPs
 python -m avhub --config config.yaml -v
 ```
 
-`config.yaml` is git-ignored. **This repository is public - never commit IPs, tokens or passwords.**
+`config.yaml` is git-ignored. Keep IPs, tokens and passwords there, not in committed files.
 
 ## Drivers
 
